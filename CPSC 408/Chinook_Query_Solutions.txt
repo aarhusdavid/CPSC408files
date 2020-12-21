@@ -1,0 +1,28 @@
+1. select address from customers where city = Chicago
+
+2. select all the artists names 
+ 3. select all employees 
+
+4. select all customers first and last name who were helped by the employee ID of 2
+
+5. select all the tracks that cost more than 99 cents
+
+6. select all the albums made by the band scorpions
+
+7. select how many track there are
+
+8. select all the billing addresses from customers
+
+9. select all the track names where the invoice billing city starts with C
+
+10. select all the names of of artists and albums that start with 'A'
+
+11. select all the tracks from all the albums of a specific artist
+
+12. select all the tracks from the grudge playlist
+
+13. select all the tracks of a genre
+
+14. select all genres from a playlist
+
+15. select all customers steve helped

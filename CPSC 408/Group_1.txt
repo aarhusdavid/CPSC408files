@@ -1,0 +1,42 @@
+1. select address from customers where city = Chicago
+select Address from customers where City = "Chicago";
+
+2. select all the artists names 
+select Name from artists;
+ 3. select all employees 
+select EmployeeId from employees 
+
+4. select all customers first and last name who were helped by the employee ID of 5
+select FirstName,LastName from customers where SupportRepId = 5;
+
+5. select all the tracks that cost more than 99 cents
+elect name from tracks where unitprice > 0.99;
+
+6. select all the albums made by the band scorpions
+select Title from albums natural join artists where Name = "Scorpions";
+
+7. select how many track there are
+select count(Name) from tracks
+
+8. select all the billing addresses from customers
+select BillingAddress from invoices
+
+9. select all the track names where the invoice billing city starts with C
+select tracks.name from (invoice_items natural join invoices) natural join tracks where invoices.billingcity like 'C%';
+
+10. select all the names of of artists and albums that start with 'A'
+select Name from albums natural join artists where Name like 'A%' and Title like 'A%';
+
+11. select all the tracks from all the albums of a specific artist
+select tracks.name from tracks,albums,artists where albums.artistid = artists.artistsid and tracks.albumid = albums.albumid and artists.name = 'Julian Bream';
+
+12. select tracks.name from playlists,playlist_track,tracks where playlists.PlaylistId = playlist_track.PlaylistId and playlist_track.TrackId = tracks.TrackId and playlists.name = 'Grunge';
+
+13. select all the tracks of a genre
+select tracks.Name from tracks,genres where genres.GenreId = tracks.GenreId and genres.Name = 'Rock';
+
+14. select all genres from a playlist 
+15. select customers.FirstName,customers.LastName from customers,employees where SupportRepId = EmployeeId and employees.FirstName = 'Steve'; 
+
+
+
